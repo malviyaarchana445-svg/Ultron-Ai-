@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Ultron AI</string>
+    <string name="title_activity_main">Ultron AI</string>
+    <string name="package_name">studio.ai.ultronexe</string>
+    <string name="custom_url_scheme">studio.ai.ultronexe</string>
+    <string name="admob_app_id">ca-app-pub-9420884023594843~7696266305</string>
+</resources>

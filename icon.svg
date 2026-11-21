@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c1e" />
+      <stop offset="50%" stop-color="#0b1739" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+
+    <!-- Ultron Electric Blue Gradient -->
+    <linearGradient id="ultronBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="30%" stop-color="#2563eb" />
+      <stop offset="70%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <!-- Cyan Glow Gradient -->
+    <linearGradient id="cyanCore" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="50%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Radial Core Glow -->
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#2563eb" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#050814" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filter for Glow Effect -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Squircle App Icon Background -->
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#bgGrad)" stroke="#1e3a8a" stroke-width="4" />
+
+  <!-- Outer Neon Border Ring -->
+  <rect x="24" y="24" width="464" height="464" rx="100" fill="none" stroke="#2563eb" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <!-- Core Ambient Glow -->
+  <circle cx="256" cy="256" r="180" fill="url(#coreGlow)" />
+
+  <!-- Subtle Cyber Hex Grid Accent -->
+  <g stroke="#3b82f6" stroke-width="1" stroke-opacity="0.15" fill="none">
+    <polygon points="256,110 370,175 370,305 256,370 142,305 142,175" />
+    <polygon points="256,70 410,158 410,332 256,420 102,332 102,158" />
+  </g>
+
+  <!-- Futuristic Ultron 'U' Crest -->
+  <!-- Left Wing -->
+  <path d="M148 140 L196 140 L196 290 C196 325 220 348 256 348 C292 348 316 325 316 290 L316 140 L364 140 L364 292 C364 356 318 400 256 400 C194 400 148 356 148 292 Z"
+        fill="url(#ultronBlue)"
+        filter="url(#neonGlow)" />
+
+  <!-- Inner Cybernetic Cutouts & Core Node -->
+  <!-- Central Pulse Energy Core -->
+  <circle cx="256" cy="270" r="28" fill="#030712" stroke="url(#cyanCore)" stroke-width="6" />
+  <circle cx="256" cy="270" r="14" fill="#38bdf8" filter="url(#neonGlow)" />
+  <circle cx="256" cy="270" r="6" fill="#ffffff" />
+
+  <!-- High-Tech Digital Accent Nodes -->
+  <line x1="256" y1="140" x2="256" y2="230" stroke="#00f0ff" stroke-width="4" stroke-linecap="round" stroke-opacity="0.8" />
+  <circle cx="256" cy="140" r="5" fill="#38bdf8" />
+
+  <!-- Left & Right Wing Accents -->
+  <line x1="172" y1="170" x2="172" y2="250" stroke="#60a5fa" stroke-width="3" stroke-linecap="round" stroke-opacity="0.7" />
+  <line x1="340" y1="170" x2="340" y2="250" stroke="#60a5fa" stroke-width="3" stroke-linecap="round" stroke-opacity="0.7" />
+
+  <!-- Bottom Arch Accent Light -->
+  <path d="M210 380 Q256 414 302 380" fill="none" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" stroke-opacity="0.9" />
+</svg>
